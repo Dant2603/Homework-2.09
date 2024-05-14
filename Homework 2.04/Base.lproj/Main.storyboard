@@ -18,7 +18,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XuK-Tf-bS2">
                                 <rect key="frame" x="16" y="87" width="361" height="147"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-vb-Pyv">
                                 <rect key="frame" x="16" y="276" width="43" height="102"/>
@@ -139,11 +139,11 @@
                     <connections>
                         <outlet property="blueColorSlider" destination="ARS-V1-Pl8" id="9lD-IQ-RaA"/>
                         <outlet property="blueColorTextField" destination="8QC-Gc-4Ht" id="Bwa-zr-zhd"/>
+                        <outlet property="colorView" destination="XuK-Tf-bS2" id="tyC-Gg-4oi"/>
                         <outlet property="greenColorSlider" destination="pBV-VT-cQF" id="p0d-oS-1eo"/>
                         <outlet property="greenColorTextField" destination="sHG-Ay-zi1" id="VFg-Z1-1cj"/>
                         <outlet property="redColorSlider" destination="tee-s0-7sv" id="be9-E2-6QP"/>
                         <outlet property="redColorTextField" destination="6CZ-52-1if" id="dfA-nA-IWD"/>
-                        <outlet property="sliderControlledView" destination="XuK-Tf-bS2" id="tyC-Gg-4oi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
