@@ -52,16 +52,25 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tee-s0-7sv">
                                 <rect key="frame" x="110" y="270" width="269" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="redColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="c5a-tJ-9nH"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pBV-VT-cQF">
                                 <rect key="frame" x="110" y="312" width="269" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                <connections>
+                                    <action selector="greenColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="RyN-iF-zNI"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ARS-V1-Pl8">
                                 <rect key="frame" x="110" y="352" width="269" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                <connections>
+                                    <action selector="blueColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="gUg-TS-KWl"/>
+                                </connections>
                             </slider>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6CZ-52-1if">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6CZ-52-1if">
                                 <rect key="frame" x="70" y="268" width="34" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,7 +82,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8QC-Gc-4Ht">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8QC-Gc-4Ht">
                                 <rect key="frame" x="70" y="350" width="34" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,7 +94,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHG-Ay-zi1">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHG-Ay-zi1">
                                 <rect key="frame" x="70" y="310" width="34" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,6 +136,15 @@
                             <constraint firstItem="xfa-vb-Pyv" firstAttribute="top" secondItem="XuK-Tf-bS2" secondAttribute="bottom" constant="42" id="veq-2N-tz2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueColorSlider" destination="ARS-V1-Pl8" id="9lD-IQ-RaA"/>
+                        <outlet property="blueColorTextField" destination="8QC-Gc-4Ht" id="Bwa-zr-zhd"/>
+                        <outlet property="greenColorSlider" destination="pBV-VT-cQF" id="p0d-oS-1eo"/>
+                        <outlet property="greenColorTextField" destination="sHG-Ay-zi1" id="VFg-Z1-1cj"/>
+                        <outlet property="redColorSlider" destination="tee-s0-7sv" id="be9-E2-6QP"/>
+                        <outlet property="redColorTextField" destination="6CZ-52-1if" id="dfA-nA-IWD"/>
+                        <outlet property="sliderControlledView" destination="XuK-Tf-bS2" id="tyC-Gg-4oi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
