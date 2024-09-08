@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func redColorSliderAction() {
+    @IBAction func redColorSliderActi on() {
         redColorTextField.text = String(format: "%.2f", redColorSlider.value)
         setColorView()
     }
